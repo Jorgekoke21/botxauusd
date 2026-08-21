@@ -1,6 +1,7 @@
 import { Benefits } from "@/components/Benefits";
 import { BotCards } from "@/components/BotCards";
 import { FinalCTA } from "@/components/FinalCTA";
+import { Faqs } from "@/components/Faqs";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -20,6 +21,7 @@ export default function Home() {
         <BotCards />
         <Results />
         <FinalCTA />
+        <Faqs />
       </main>
       <Footer />
     </>

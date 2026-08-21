@@ -1,12 +1,6 @@
 import Image from "next/image";
+import { BreakingNewsCard } from "@/components/BreakingNewsCard";
 import { publicAsset } from "@/lib/public-asset";
-
-const advantages = [
-  "Estrategias automatizadas",
-  "Gestión de riesgo configurable",
-  "Parámetros transparentes",
-  "Ejecución automática 24/5",
-];
 
 export function Hero() {
   return (
@@ -39,15 +33,7 @@ export function Hero() {
           />
         </div>
 
-        <aside className="hero-panel" aria-label="Ventajas principales">
-          <p className="panel-kicker">BOTS DE NUEVA GENERACIÓN</p>
-          <h2>Toma el control de tu operativa</h2>
-          <ul>
-            {advantages.map((item) => <li key={item}><span>✓</span>{item}</li>)}
-          </ul>
-          <a className="comic-button comic-button--green comic-button--block" href="#comprar">Empezar ahora</a>
-          <p className="panel-note">Configuración y datos verificados antes de operar.</p>
-        </aside>
+        <BreakingNewsCard />
       </div>
     </section>
   );

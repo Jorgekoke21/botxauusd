@@ -5,6 +5,7 @@ type IconName =
   | "bolt"
   | "terminal"
   | "clock"
+  | "calendar"
   | "sliders"
   | "target";
 
@@ -27,6 +28,7 @@ export function Icon({ name, className = "" }: { name: IconName; className?: str
     bolt: <path d="M28 4 10 28h13l-3 16 18-25H25l3-15Z"/>,
     terminal: <><rect x="5" y="8" width="38" height="32" rx="5"/><path d="m13 18 6 6-6 6M24 31h11"/></>,
     clock: <><circle cx="24" cy="24" r="18"/><path d="M24 14v11l8 5"/></>,
+    calendar: <><rect x="6" y="9" width="36" height="34" rx="4"/><path d="M15 5v8M33 5v8M6 18h36"/><path d="M15 26h.01M24 26h.01M33 26h.01M15 34h.01M24 34h.01M33 34h.01"/></>,
     sliders: <><path d="M9 12h30M9 24h30M9 36h30"/><circle cx="18" cy="12" r="4" fill="currentColor"/><circle cx="31" cy="24" r="4" fill="currentColor"/><circle cx="22" cy="36" r="4" fill="currentColor"/></>,
     target: <><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="3" fill="currentColor"/></>,
   };

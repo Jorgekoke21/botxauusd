@@ -7,7 +7,7 @@ const links = [
   ["Estrategias", "#bots"],
   ["Resultados", "#resultados"],
   ["Precio", "#comprar"],
-  ["FAQs", "#contacto"],
+  ["FAQs", "#faqs"],
 ] as const;
 
 function NavLinks() {

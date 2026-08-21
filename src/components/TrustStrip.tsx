@@ -3,6 +3,7 @@ import { Icon } from "./Icon";
 const items = [
   { icon: "target" as const, title: "XAUUSD", text: "Mercado principal" },
   { icon: "terminal" as const, title: "MT4", text: "Plataforma compatible" },
+  { icon: "terminal" as const, title: "MT5", text: "Plataforma compatible" },
   { icon: "bolt" as const, title: "Automático", text: "Ejecución programada" },
   { icon: "shield" as const, title: "Riesgo", text: "Control configurable" },
   { icon: "clock" as const, title: "24/5", text: "Ventana de mercado" },
