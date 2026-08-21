@@ -1,8 +1,18 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
+import { publicAsset } from "@/lib/public-asset";
+
+type FinalCtaStyle = CSSProperties & {
+  "--final-cta-background": string;
+};
 
 export function FinalCTA() {
+  const style: FinalCtaStyle = {
+    "--final-cta-background": `url("${publicAsset("/images/bots/home.png")}")`,
+  };
+
   return (
-    <section className="final-cta" id="comprar">
+    <section className="final-cta" id="comprar" style={style}>
       <div className="sparkle sparkle--one" aria-hidden="true">✦</div>
       <div className="sparkle sparkle--two" aria-hidden="true">✦</div>
       <div className="page-shell final-grid">
@@ -19,7 +29,7 @@ export function FinalCTA() {
           <div className="final-character">
             <Image
               className="final-character-image"
-              src="/images/bots/principaloro.png"
+              src={publicAsset("/images/bots/principaloro.png")}
               alt="Rana dorada junto a una pila ascendente de lingotes de oro"
               width={1448}
               height={1086}

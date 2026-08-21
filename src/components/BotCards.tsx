@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { bots } from "@/data/bots";
+import { publicAsset } from "@/lib/public-asset";
 
 export function BotCards() {
   return (
@@ -14,7 +15,7 @@ export function BotCards() {
               <div className="bot-image">
                 <Image
                   className="bot-card-image"
-                  src={bot.image}
+                  src={publicAsset(bot.image)}
                   alt={`Ilustración de ${bot.name}`}
                   width={bot.imageWidth}
                   height={bot.imageHeight}

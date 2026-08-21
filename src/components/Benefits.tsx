@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 import { Icon } from "./Icon";
 
 const benefits = [
@@ -20,7 +21,7 @@ export function Benefits() {
           <div className="benefits-character">
             <Image
               className="benefits-character-image"
-              src="/images/bots/proits.png"
+              src={publicAsset("/images/bots/proits.png")}
               alt="Rana dorada con traje sosteniendo una taza de beneficios"
               width={1536}
               height={1024}

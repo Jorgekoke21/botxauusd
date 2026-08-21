@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 const metrics = ["Net Profit", "Win Rate", "Profit Factor", "Max Drawdown"];
 
@@ -12,7 +13,7 @@ export function Results() {
           <div className="results-character">
             <Image
               className="results-character-image"
-              src="/images/bots/tirado.png"
+              src={publicAsset("/images/bots/tirado.png")}
               alt="Rana dorada descansando junto a un aviso sobre rendimiento pasado"
               width={1448}
               height={1086}

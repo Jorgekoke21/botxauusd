@@ -103,7 +103,7 @@
 .results-disclaimer { max-width: 780px; margin: 15px auto 0; text-align: center; font-size: .69rem; line-height: 1.4; }
 
 .final-cta { position: relative; isolation: isolate; overflow: clip; background: #e5b4ed; border-top: var(--border); }
-.final-cta::before { content: ""; position: absolute; inset: 18% 0 0; z-index: 0; opacity: .1; background: url("/images/bots/home.png") center bottom / cover no-repeat; filter: grayscale(1) sepia(1) hue-rotate(220deg) saturate(3); mix-blend-mode: multiply; mask-image: linear-gradient(transparent 0%, #000 44%); pointer-events: none; }
+.final-cta::before { content: ""; position: absolute; inset: 18% 0 0; z-index: 0; opacity: .1; background: var(--final-cta-background) center bottom / cover no-repeat; filter: grayscale(1) sepia(1) hue-rotate(220deg) saturate(3); mix-blend-mode: multiply; mask-image: linear-gradient(transparent 0%, #000 44%); pointer-events: none; }
 .final-cta::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; z-index: 0; height: 24%; background: linear-gradient(180deg, transparent, rgba(119,55,245,.09)); pointer-events: none; }
 .final-grid { max-width: 1380px; min-height: clamp(460px, 28vw, 540px); position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr); align-items: center; gap: clamp(24px, 2.5vw, 48px); }
 .final-copy { min-width: 0; position: relative; z-index: 2; align-self: center; padding-block: 48px; }

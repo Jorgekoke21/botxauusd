@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 const advantages = [
   "Estrategias automatizadas",
@@ -10,7 +11,7 @@ const advantages = [
 export function Hero() {
   return (
     <section className="hero" id="inicio">
-      <Image className="hero-scene" src="/images/bots/home.png" alt="" fill sizes="100vw" priority />
+      <Image className="hero-scene" src={publicAsset("/images/bots/home.png")} alt="" fill sizes="100vw" priority />
       <div className="hero-sky-wash" aria-hidden="true" />
       <div className="page-shell hero-grid">
         <div className="hero-copy">
@@ -29,7 +30,7 @@ export function Hero() {
         <div className="hero-character">
           <Image
             className="hero-character-image"
-            src="/images/bots/ranaoro.png"
+            src={publicAsset("/images/bots/ranaoro.png")}
             alt="Rana robot dorada con gafas de sol frente a un gráfico ascendente"
             width={1086}
             height={1448}

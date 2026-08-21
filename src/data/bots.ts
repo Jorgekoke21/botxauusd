@@ -1,6 +1,6 @@
 export type Bot = {
   name: string;
-  image: string;
+  image: `/${string}`;
   imageWidth: number;
   imageHeight: number;
   description: string;

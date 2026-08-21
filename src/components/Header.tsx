@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 const links = [
   ["Inicio", "#inicio"],
@@ -23,7 +24,7 @@ export function Header() {
       <div className="page-shell header-inner">
         <a href="#inicio" className="brand" aria-label="Bots Trading, inicio">
           <span className="brand-mark">
-            <Image src="/images/bots/ranaoro.png" alt="" fill sizes="48px" priority />
+            <Image src={publicAsset("/images/bots/ranaoro.png")} alt="" fill sizes="48px" priority />
           </span>
           <span>BOTS<br />TRADING</span>
         </a>
